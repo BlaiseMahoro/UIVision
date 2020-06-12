@@ -1,0 +1,9 @@
+# UIVision
+
+- CaptureEntirePage command does not work on my local machine, but when I use local storage (inside the browser) this command works.
+- Solving CAPTCHA: 
+  - UIVision's click command can work (just click to check the box), but the system (idtrue.com and/or CAPTCHA) quickly suspects that a robot is solving the CAPTCHA and now sends random puzzles to make sure (pictures). **For now, the user needs to put a break point after clicking the captcha. Then, the user needs to solve the captcha. Obviously, this will need to change.***
+  - One way to overcome this challenge is integrating the macro with an AI/Machine learning that can solve the captcha like a human would. Alternatively, one can use a VPN service(that changes location) to make sure the system (idtrue.com and/ or CAPTCHA) thinks all the requests are being sent by different hosts (devices).  
+  - I also found a handy CAPTCHA solver extension (available for Chrome, firefox,...). The extension requires one click and then solves the image puzzle. The extension is [Buster: Captcha Solver for Humans](https://chrome.google.com/webstore/detail/buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl?hl=en). However, using this captcha solver makes the system (idtrue.com or CAPTCHA) reject all the requests because of increased network traffic.
+- The confirmation email takes 2-3 minutes. **The use may need a break point t make sure the email arrives or use a pause for 3 minutes**
+- Opening and singing in gmail was also challenging. I try to use the chrome's private mode to get rid of the issue of having more than one gmail accounts, bu that didn't work. A better way to do this would require using gmail APIs and writing a script to interact with the API. **So, the user needs to signout out and remove all gmail accounts for this to work.**

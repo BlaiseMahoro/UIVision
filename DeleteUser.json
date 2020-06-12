@@ -1,0 +1,166 @@
+{
+  "Name": "DeleteUser",
+  "CreationDate": "2020-6-12",
+  "Commands": [
+    {
+      "Command": "comment",
+      "Target": "make sure that you signed out from all gmail accounts",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "If possible, remove all gmail accounts ",
+      "Value": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://www.idtrue.com/optout/index.php",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "xpath=//*[@id=\"form\"]/div[4]/button",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=first",
+      "Value": "jim"
+    },
+    {
+      "Command": "type",
+      "Target": "id=last",
+      "Value": "griffin"
+    },
+    {
+      "Command": "click",
+      "Target": "id=state",
+      "Value": ""
+    },
+    {
+      "Command": "select",
+      "Target": "id=state",
+      "Value": "label=Illinois"
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"form\"]/div[4]/button",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "xpath=//*[@id=\"main\"]/div",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "Was unable to take screen shot",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=This Is Me »",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=email",
+      "Value": "macro.test92@gmail.com"
+    },
+    {
+      "Command": "check",
+      "Target": "name=check",
+      "Value": ""
+    },
+    {
+      "Command": "selectFrame",
+      "Target": "index=0",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"recaptcha-anchor\"]/div[1]",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "If captcha fails, you can use break point before the next command",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "And solve captcha, then resume execution after the captcha is verified",
+      "Value": ""
+    },
+    {
+      "Command": "selectFrame",
+      "Target": "relative=top",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=submit",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "Add a break point to wait for the email. Takes 2-3minutes",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "Sign out and remove all gmail accounts",
+      "Value": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=identifierId",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=identifierId",
+      "Value": "macro.test92"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"identifierNext\"]/div[2]",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "name=password",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "name=password",
+      "Value": "__KANTU_ENCRYPTED__58ce38712e1a1bf73a93e5dd7bc170827f0e"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"passwordNext\"]/span/span",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"gb\"]/div[2]/div[3]/div[1]/div[2]/div/a/img",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=:2e",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "linkText=http://www.idtrue.com/optout/confirm.php?id=*",
+      "Value": ""
+    }
+  ]
+}
